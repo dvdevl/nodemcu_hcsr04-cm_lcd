@@ -17,11 +17,11 @@
 #define D10 1   //TX
 
 //ID pinos
-//hcsr04
+//modulo hcsr04
 const int trigPin = D6;
 const int echoPin = D7;
-//lcd
-const int v0 = D3; //contrast
+//modulo lcd
+const int v0 = D3; //contraste
 const int rs = D4, en = D5, d4 = D2, d5 = D9, d6 = D10, d7 = D0;
 
 //INIT
@@ -53,5 +53,5 @@ void loop() {
   lcd.print(distance);
   lcd.setCursor(4, 0);
   lcd.print("cm");
-  delay(500); //leitura por segundo
+  delay(500); //intervalo de leituras em ms
 }
